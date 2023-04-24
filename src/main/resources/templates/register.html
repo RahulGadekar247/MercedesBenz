@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* Set styles for header */
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+
+/* Set styles for main section */
+main {
+	margin: 20px auto;
+	max-width: 600px;
+}
+
+/* Set styles for form section */
+form {
+	background-color: #f2f2f2;
+	border-radius: 5px;
+	padding: 20px;
+}
+
+/* Set styles for form labels */
+label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+/* Set styles for form input fields */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+	border-radius: 3px;
+	border: 1px solid #ccc;
+	display: block;
+	font-size: 16px;
+	margin-bottom: 20px;
+	padding: 10px;
+	width: 100%;
+}
+
+/* Set styles for form submit button */
+input[type="submit"] {
+	background-color: #333;
+	border: none;
+	border-radius: 3px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 16px;
+	padding: 10px 20px;
+}
+
+/* Set styles for footer */
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+
+</style>
+
+	<meta charset="UTF-8">
+	<title>Register for Vintage Cars</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Register for Vintage Cars</h1>
+		
+	</header>
+	<main>
+		<section>
+			<h2>Registration Form</h2>
+			
+			<nav>
+				<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="succes.html">Succes Page</a></li></ul></nav>
+			<form action="register.php" method="post">
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required>
+
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+
+				<label for="password">Password:</label>
+				<input type="password" id="password" name="password" required>
+
+				<label for="testcase">Testcase:</label>
+				<input type="text" id="testcase" name="testcase" required>
+
+				<label for="answer">Answer:</label>
+				<input type="text" id="answer" name="answer" required>
+
+				<input type="submit" value="Register">
+				
+				
+			</form>
+			
+			
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2023 Vintage Cars</p>
+	</footer>
+</body>
+</html>

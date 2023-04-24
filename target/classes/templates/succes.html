@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Uploaded Data</title>
+</head>
+<body>
+	<header>
+		<h1>Uploaded Data</h1>
+	</header>
+	<main>
+		<section>
+			<h2>Recent Uploads</h2>
+			<ul id="upload-list">
+				<!-- uploaded data will be displayed here -->
+				
+				<li><a href="index.html">Home</a></li>
+				<li><a href="register.html">Register</a></li>
+			</ul>
+		</section>
+		
+	</main>
+	<footer>
+		<p>&copy; 2023 Vintage Cars</p>
+	</footer>
+	<script>
+		// get uploaded data from local storage
+		let uploads = JSON.parse(localStorage.getItem('uploads')) || [];
+			// add each uploaded data as a list item
+	let uploadList = document.getElementById('upload-list');
+	uploads.forEach(data => {
+		let listItem = document.createElement('li');
+		listItem.textContent = data.name + ' (' + data.type + ')';
+		uploadList.appendChild(listItem);
+	});
+</script>
+		</body>
+		</html>
